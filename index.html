@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">Text Matcher</h1>
+        <textarea id="text1" class="text-field" placeholder="Enter First Text"></textarea>
+        <textarea id="text2" class="text-field" placeholder="Enter Second Text"></textarea>
+        <div class="result" id="result">Result: </div>
+        <br><br>
+        <button class="btn" type="button" onclick="checkMatch()">Check Match</button>
+        <button class="btn" type="button" onclick="resetMatch()">Reset</button>
+    
+    </div>
+    <script>
+        const text1 = document.getElementById('text1');
+        const text2 = document.getElementById('text2');
+        const result = document.getElementById('result');
+
+        function checkMatch() {
+            if (text1.value === text2.value) {
+                result.innerText = 'Result: Texts Match!';
+                result.style.color = "green"
+            } else {
+                result.innerText = 'Result: Texts Do Not Match!';
+                 result.style.color = "red"
+            }
+        }
+
+        function resetMatch() {
+            text1.value = '';
+            text2.value = '';
+            result.innerText = 'Result: ';
+        }
+    </script>
+    
+</body>
+</html>
