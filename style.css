@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            width: 400px;
+            transition: transform 0.5s;
+        }
+
+        .container:hover {
+            transform: translateY(-15px);
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .text-field {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 15px 0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .text-field:focus {
+            border-color: #43cea2;
+        }
+
+        .btn {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: #fff;
+            width: 160px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #185a9d, #43cea2);
+            transform: scale(1.05);
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 2rem;
+            color: #fff;
+        }
